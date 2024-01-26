@@ -1,0 +1,15 @@
+meme_dict = {
+    "gg": "El sonunda kazandığımız maçın sonunda kullanılan kışkırtıcı sözcük",
+    "lol": "Komik bir şeye verilen cevap",
+    "random": "apfjajofaojfao bu karmaşık harfler güldüğümüz anlamına gelir karışık bir şekilde yazabilirsiniz"
+}
+
+word = input("hayatının özetini anlatabilir misin: ")
+
+#bireyin yazdığı kelimeyi büyük küçük fark etmeden yazmak için
+word_lower = word.lower()
+
+if word_lower in meme_dict:
+    print(meme_dict[word_lower])
+else:
+    print('Maalesef, şu anda kelime haznemizde yazmış olduğunuz sözcük yok')
